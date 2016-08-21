@@ -27,8 +27,6 @@
             [alertViewTest show];
         };
         [toAppStore showGotoAppStore];
-         
-        
     });
 }
 
