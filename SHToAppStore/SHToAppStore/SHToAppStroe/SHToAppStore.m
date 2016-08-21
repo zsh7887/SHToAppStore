@@ -78,7 +78,6 @@ typedef enum : NSUInteger {
         UIAlertAction *refuseAction = [UIAlertAction actionWithTitle:@"😭残忍拒绝" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction *action) {
             
             [userDefault setInteger:stateRefusal forKey:LastSelectState];
-            [[UIApplication sharedApplication]openURL:[NSURL URLWithString:self.myAppURL]];
         }];
         
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"😄好评赞赏" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction *action) {
@@ -108,7 +107,6 @@ typedef enum : NSUInteger {
     switch (buttonIndex+1) {
         case stateRefusal:
             [userDefault setInteger:stateRefusal forKey:LastSelectState];
-            [[UIApplication sharedApplication]openURL:[NSURL URLWithString:self.myAppURL]];
             break;
         case stateComplaints:
 

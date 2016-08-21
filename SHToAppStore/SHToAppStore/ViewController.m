@@ -21,8 +21,10 @@
     //意见反馈
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         SHToAppStore *toAppStore = [[SHToAppStore alloc]init];
-        //一定要这里调用Alert 如果在子类调用程序会崩溃
+        toAppStore.myAppURL = @"https://itunes.apple.com/cn/app/8bitdo/id1134414956?mt=8";
         toAppStore.IOS7AlertViewBlock = ^{
+            //一定要这里调用Alert 如果在子类调用程序会崩溃
+            //如果要适配IOS7 需要调用
             UIAlertView * alertViewTest = [[UIAlertView alloc] initWithTitle:toAppStore.title message:toAppStore.message delegate:toAppStore cancelButtonTitle:nil otherButtonTitles:@"😭残忍拒绝",@"😓我要吐槽",@"😄好评赞赏", nil];
             [alertViewTest show];
         };
