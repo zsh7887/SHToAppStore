@@ -430,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SHToAppStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-Bitdo.SHToAppStore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SHToAppStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-Bitdo.SHToAppStore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +514,7 @@
 				C136EDA61D69A264008362A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C136EDA71D69A264008362A1 /* Build configuration list for PBXNativeTarget "SHToAppStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +523,7 @@
 				C136EDA91D69A264008362A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C136EDAA1D69A264008362A1 /* Build configuration list for PBXNativeTarget "SHToAppStoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +532,7 @@
 				C136EDAC1D69A264008362A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

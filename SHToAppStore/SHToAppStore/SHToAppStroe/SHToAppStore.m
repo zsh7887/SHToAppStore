@@ -129,4 +129,8 @@ typedef enum : NSUInteger {
 -(NSString *)message{
     return _message==nil?@"有了您的支持才能更好的为您服务，提供更加优质的，更加适合您的App，当然您也可以直接反馈问题给到我们":_message;
 }
+
+-(void)dealloc{
+    NSLog(@"SHToAppStore.h");
+}
 @end
